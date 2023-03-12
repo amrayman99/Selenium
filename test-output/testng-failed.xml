@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="PagesTestCases.LogInTests">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="valid_email_valid_password"/>
+        </methods>
+      </class> <!-- PagesTestCases.LogInTests -->
+      <class name="PagesTestCases.AddToCartTests">
+        <methods>
+          <include name="delete_product_from_cart"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- PagesTestCases.AddToCartTests -->
+      <class name="PagesTestCases.FilterationTests">
+        <methods>
+          <include name="Clear_Filter"/>
+          <include name="setUp"/>
+          <include name="Filter_products"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- PagesTestCases.FilterationTests -->
+      <class name="PagesTestCases.SearchTests">
+        <methods>
+          <include name="setUp"/>
+          <include name="search_with_unrelated_word"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- PagesTestCases.SearchTests -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
